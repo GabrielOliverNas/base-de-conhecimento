@@ -38,10 +38,6 @@ jobs:
       working-directory: ./backend
       run: npm ci
 
-    - name: Run Backend Tests (exemplo)
-      working-directory: ./backend
-      run: npm test
-
     - name: Install Frontend Dependencies
       working-directory: ./frontend
       run: npm ci
