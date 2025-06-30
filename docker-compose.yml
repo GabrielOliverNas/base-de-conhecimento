@@ -35,12 +35,14 @@ services:
     container_name: frontend_container
     ports:
       - "4200:4200"
+      - "49153:49153"
     depends_on:
       - backend
     stdin_open: true
     tty: true
     volumes:
       - ./frontend:/app
+      - /app/node_modules 
     command: npm start
 
 volumes:
